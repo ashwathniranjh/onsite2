@@ -1,7 +1,7 @@
 const canvas = document.querySelector('#ballsplit');
 const ctx = canvas.getContext('2d');
 let circles;
-
+let colors = ['#EB5A59','#8ff07b','#5D8AF5'];
 
 window.addEventListener('load', () => {
 //resizing
@@ -50,11 +50,12 @@ class Circle{
         this.x = x;
         this.y = y;
         this.radius = radius;
+        this.color = colors[Math.floor(Math.random() * (3) )] ;
       }
       draw(){
         ctx.beginPath();
         ctx.arc(this.x,this.y,this.radius, 0, Math.PI*2,false);
-        ctx.fillStyle = '#8ff07b';
+        ctx.fillStyle = this.color;
         ctx.fill();
       };
 }
