@@ -1,0 +1,14 @@
+#ballsplit{
+    border: 2px solid black;
+}
+body{
+    background-color: #434646;
+    color: #95E8E8;
+}
+h1{
+    position: absolute;
+    top:50%;
+    right:25%;
+    transform: translate(25%, -50%);
+  font-family: 'Roboto', sans-serif;;
+}
